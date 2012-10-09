@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Names</key>
+	<array>
+		<string>pixalate.png</string>
+		<string>cartoon.png</string>
+		<string>greyEffects.png</string>
+		<string>softFocus.png</string>
+		<string>inverse.png</string>
+		<string>binary.png</string>
+		<string>sepia.png</string>
+		<string>pencilSketch.png</string>
+		<string>retro.png</string>
+		<string>filmGrain.png</string>
+		<string>brightnessnContrast.png</string>
+		<string>colorSketch.png</string>
+		<string>pinHole.png</string>
+		<string>inPainting.png</string>
+		<string>intro.png</string>
+	</array>
+	<key>Description</key>
+	<array>
+		<string>The appearance of pixel blocks in a still image produces pixalte effect.</string>
+		<string>Cartoon filter creates effect of semi realisting drawing of sketch.</string>
+		<string>Grayscale image is an image in which the value of each pixel is a single sample, that is, it carries only intensity information. Images of this sort, also known as black-and-white, are composed exclusively of shades of gray, varying from black at the weakest intensity to white at the strongest.</string>
+		<string>Soft focus lens deliberately introduces spherical aberration in order to give the appearance of blurring the image while retaining sharp edges. It deliberately lacks definition in a photograph.</string>
+		<string>A negative image is color reversed, with red areas appearing cyan, greens appearing magenta and blues appearing yellow.</string>
+		<string>Binary image has only two possible values for each pixel. Typically the two colors used for a binary image are black and white though any two colors can be used.</string>
+		<string>Sepia Tone is an image effect that tints an image to resemble an old photograph. It resembles the effect of aging in old photographs, and of older photographs chemically treated either for visual effect.</string>
+		<string>This effect gives the pencil sketch image. It is like a hand drawing with pencil.</string>
+		<string>Simple retro-style photo effect done by adding noise to the luminance channel and reducing intensity of the chroma channels</string>
+		<string>Film grain or granularity is the random optical texture of processed photographic film due to the presence of small particles of a metallic silver, or dye clouds.</string>
+		<string>  Slider adjust a picture&apos;s relative lightness (brightness), the difference between its darkest and lightest areas (contrast), and the transparency of one of its color.</string>
+		<string>It gives an image effect of hand drawing with pencil color.</string>
+		<string>Pictures from pinhole cameras look soft and grainy, due to the pinhole &quot;lens&quot; and the fast film that is needed to record the image. Image also have dark edges, due to the light falloff passing through the small hole.</string>
+		<string>Restores the selected region in an image using the region neighborhood. Mask can be generated with painting regions with touch gesturesand pressing done button.</string>
+		<string>Image filtering is the process of bringing variation in appearance of Image. In this demo you will experince varous types on filteration, like retro, gray, sketch, and soft focus etc.</string>
+	</array>
+</dict>
+</plist>

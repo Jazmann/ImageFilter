@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="eKW-yw-eaW">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.60000000000000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="nmQ-Ky-Pe8">
+                                <rect key="frame" x="113" y="387" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Enter" image="Button.png" backgroundImage="ButtonHighlighted.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9ZK-BK-JVt" kind="push" id="PO3-bI-PTH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="YA8-tF-4AQ"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="490" y="69"/>
+        </scene>
+        <!--Image Filter View Controller-->
+        <scene sceneID="u11-l1-ZSu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qn1-GT-Uc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9ZK-BK-JVt" customClass="ImageFilterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MXH-d5-9BJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="TQm-ar-qRH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="L6S-sn-8uP">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </toolbar>
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="255" continuous="NO" id="WIT-3L-j7B">
+                                <rect key="frame" x="37" y="260" width="202" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="6FA-ZH-ree">
+                                <rect key="frame" x="282" y="6" width="29" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hvN-XX-bO9" kind="push" identifier="showDetail" id="36X-GE-jhZ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="" lineBreakMode="tailTruncation" minimumFontSize="12" id="PCG-eb-xdC">
+                                <rect key="frame" x="242" y="260" width="58" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="3" continuous="NO" id="9SI-nw-wme">
+                                <rect key="frame" x="37" y="307" width="202" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="" lineBreakMode="tailTruncation" minimumFontSize="12" id="iBK-fS-WOz">
+                                <rect key="frame" x="242" y="308" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="njn-om-JTJ">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alphaLabel" destination="iBK-fS-WOz" id="eVh-gs-J6f"/>
+                        <outlet property="alphaSlider" destination="9SI-nw-wme" id="0IV-Uv-2Zb"/>
+                        <outlet property="imageView" destination="TQm-ar-qRH" id="5Zq-hd-3EH"/>
+                        <outlet property="label" destination="PCG-eb-xdC" id="DX3-cc-tXo"/>
+                        <outlet property="myToolbar" destination="L6S-sn-8uP" id="kaB-1B-DcC"/>
+                        <outlet property="thresholdSlider" destination="WIT-3L-j7B" id="mzD-jF-Qpe"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="860" y="75"/>
+        </scene>
+        <!--Detail View Contoller-->
+        <scene sceneID="M6k-65-JCv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKT-n9-s7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hvN-XX-bO9" customClass="DetailViewContoller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XfR-WI-b3T">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="9hA-gu-HYR">
+                                <rect key="frame" x="16" y="15" width="288" height="207"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="IoY-ND-Suv">
+                                <rect key="frame" x="16" y="239" width="288" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xqE-zi-QVV">
+                        <barButtonItem key="backBarButtonItem" title="back" id="v6i-yn-5tu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailImageView" destination="9hA-gu-HYR" id="Wge-sv-IGW"/>
+                        <outlet property="detailTextView" destination="IoY-ND-Suv" id="NHV-6f-64J"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1224" y="75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F1y-kb-rX7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T3-1c-eu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="eKW-yw-eaW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="SpP-l6-ODI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="363-Tj-MMB"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="69" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button.png" width="162" height="42"/>
+        <image name="ButtonHighlighted.png" width="162" height="42"/>
+    </resources>
+    <classes>
+        <class className="DetailViewContoller" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewContoller.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="detailTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ImageFilterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageFilterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="betaSliderValueChangedAction:" candidateClass="UISlider"/>
+                <relationship kind="action" name="doneButtonAction:"/>
+                <relationship kind="action" name="feelingLucky:"/>
+                <relationship kind="action" name="showCameraImage:"/>
+                <relationship kind="action" name="showPhotoLibrary:"/>
+                <relationship kind="action" name="sliderValueChangedAction:" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="alphaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="alphaSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myToolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="thresholdSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
