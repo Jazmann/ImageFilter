@@ -277,7 +277,7 @@ return [UIImageCVMatConverter UIImageFromCVMat:resultMat];
     cv::cvtColor(inputMat, yuvMat, CV_BGR2YCrCb);
     
     // split the image into separate color planes
-    cv::vector<cv::Mat> planes;
+    std::vector<cv::Mat> planes;
     cv::split(yuvMat, planes);
     
     // fills the matrix with normally distributed random values;
@@ -316,7 +316,7 @@ return [UIImageCVMatConverter UIImageFromCVMat:resultMat];
     // convert image to YUV color space.    
     cv::cvtColor(inputMat, yuvMat, CV_BGR2YCrCb);        
     // split the image into separate color planes    
-    cv::vector<cv::Mat> planes;    
+    std::vector<cv::Mat> planes;    
     cv::split(yuvMat, planes);        
     cv::GaussianBlur((cv::Mat)planes[0], (cv::Mat)planes[0], cvSize(1, 1), 2);    
     // normally distributed random values;       
@@ -341,7 +341,7 @@ return [UIImageCVMatConverter UIImageFromCVMat:resultMat];
 {
     CvPoint center;
     double scale= -1.5;
-    cv::vector<cv::Mat> planes;
+    std::vector<cv::Mat> planes;
     cv::Mat radialMat = cv::Mat(inputMat.rows, inputMat.cols, inputMat.type());
     
     center = cvPoint(inputMat.rows/2,inputMat.cols/2);
