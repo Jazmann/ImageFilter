@@ -156,28 +156,30 @@ return [UIImageCVMatConverter UIImageFromCVMat:resultMat];
 -(cv::Mat)sepiaConversion:(cv::Mat)inputMat
 {
     cv::Mat sepiaMat = cv::Mat( inputMat.size(), inputMat.type() );
-    CvMat *sepia = cvCreateMat(4, 4, CV_32F);
+//    CvMat *sepia = cvCreateMat(4, 4, CV_32F);
+    cv::Mat sepia;
+    sepia.create(4, 4, CV_32F);
 
-    CV_MAT_ELEM(*sepia, float, 0, 0) = 0.189;
-    CV_MAT_ELEM(*sepia, float, 0, 1) = 0.769;
-    CV_MAT_ELEM(*sepia, float, 0, 2) = 0.393;
-    CV_MAT_ELEM(*sepia, float, 0, 3) = 0;
-       
-    CV_MAT_ELEM(*sepia, float, 1, 0) = 0.168;
-    CV_MAT_ELEM(*sepia, float, 1, 1) = 0.686;
-    CV_MAT_ELEM(*sepia, float, 1, 2) = 0.349;
-    CV_MAT_ELEM(*sepia, float, 0, 3) = 0;
-       
-    CV_MAT_ELEM(*sepia, float, 2, 0) = 0.131;
-    CV_MAT_ELEM(*sepia, float, 2, 1) = 0.534;
-    CV_MAT_ELEM(*sepia, float, 2, 2) = 0.272;
-    CV_MAT_ELEM(*sepia, float, 0, 3) = 0;
+    sepia.at<float>(0, 0) = 0.189;
+    sepia.at<float>(0, 1) = 0.769;
+    sepia.at<float>(0, 2) = 0.393;
+    sepia.at<float>(0, 3) = 0;
     
-    CV_MAT_ELEM(*sepia, float, 3, 0) = 0;
-    CV_MAT_ELEM(*sepia, float, 3, 1) = 0;
-    CV_MAT_ELEM(*sepia, float, 3, 2) = 0;
-    CV_MAT_ELEM(*sepia, float, 3, 3) = 1;
+    sepia.at<float>(1, 0) = 0.168;
+    sepia.at<float>(1, 1) = 0.686;
+    sepia.at<float>(1, 2) = 0.349;
+    sepia.at<float>(0, 3) = 0;
     
+    sepia.at<float>(2, 0) = 0.131;
+    sepia.at<float>(2, 1) = 0.534;
+    sepia.at<float>(2, 2) = 0.272;
+    sepia.at<float>(0, 3) = 0;
+    
+    sepia.at<float>(3, 0) = 0;
+    sepia.at<float>(3, 1) = 0;
+    sepia.at<float>(3, 2) = 0;
+    sepia.at<float>(3, 3) = 1;
+        
     cv::transform(inputMat, sepiaMat, (cv::Mat)(sepia));
     inputMat.release();
         
