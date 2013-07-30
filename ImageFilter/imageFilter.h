@@ -23,8 +23,6 @@
 #include <opencv2/photo.hpp>
 #include <opencv2/photo/photo_c.h>
 
-
-
 #endif
 #import <UIKit/UIKit.h>
 
